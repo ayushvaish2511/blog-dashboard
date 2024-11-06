@@ -26,7 +26,6 @@ export default function Home({ posts, users }: HomeProps) {
     const [selectedUser, setSelectedUser] = useState<number | null>(null);
 
     const filterPosts = (userId: number | null) => {
-        setSelectedUser(userId);
         setFilteredPosts(userId ? posts.filter(post => post.userId === userId) : posts);
     };
 

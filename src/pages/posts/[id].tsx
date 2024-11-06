@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Comment from '../../components/Comment';
 import { GetServerSideProps } from 'next';
 
