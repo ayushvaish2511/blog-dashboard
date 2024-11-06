@@ -23,7 +23,7 @@ interface HomeProps {
 
 export default function Home({ posts, users }: HomeProps) {
     const [filteredPosts, setFilteredPosts] = useState(posts);
-    const [selectedUser, setSelectedUser] = useState<number | null>(null);
+    // const [selectedUser, setSelectedUser] = useState<number | null>(null);
 
     const filterPosts = (userId: number | null) => {
         setFilteredPosts(userId ? posts.filter(post => post.userId === userId) : posts);
